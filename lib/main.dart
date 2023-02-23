@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:object_coder/routs.dart';
+import 'package:object_coder/screens/splash/splash_screen.dart';
+import 'package:object_coder/theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +16,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'ObjectCoder',
-      //theme: theme(),
+      theme: theme(),
+      initialRoute: SplashScreen.routeName,
+      routes: routes,
     );
   }
 }

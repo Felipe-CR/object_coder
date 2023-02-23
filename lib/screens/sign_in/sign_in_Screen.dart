@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:object_coder/screens/sign_in/components/body.dart';
 
-class SignUpScreen extends StatelessWidget {
-  static String routeName = "/sign_up";
+class SignInScreen extends StatelessWidget {
+  static String routeName = "/sign_in";
 
-  const SignUpScreen({
+  const SignInScreen({
     Key? key
   }) : super(key: key);
 
@@ -12,9 +12,9 @@ class SignUpScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Registro"),
+        title: const Text('Sign In'),
       ),
-      body: Body(),
+      body: const Body(),
     );
   }
 }
