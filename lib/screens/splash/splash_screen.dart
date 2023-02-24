@@ -33,7 +33,7 @@ class SplashScreen extends StatelessWidget {
                   ),
                   child: Center(
                     child: Image.asset(
-                      "images/books.png",
+                      "assets/images/books.png",
                       scale: 0.8,
                     ),
                   ),
@@ -45,9 +45,19 @@ class SplashScreen extends StatelessWidget {
               child: Container(
                 width: MediaQuery.of(context).size.width,
                 height: MediaQuery.of(context).size.height / 2.666,
-                padding: const EdgeInsets.only(top: 40, bottom: 30),
                 decoration: const BoxDecoration(
                   color: kPrimaryColor,
+                ),
+              ),
+            ),
+            Align(
+              alignment: Alignment.bottomCenter,
+              child: Container(
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height / 2.666,
+                padding: const EdgeInsets.only(top: 40, bottom: 30),
+                decoration: const BoxDecoration(
+                  color: Colors.white,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(70),
                   ),
@@ -57,7 +67,7 @@ class SplashScreen extends StatelessWidget {
                     const Text(
                       "El aprendizaje es el poder",
                       style: TextStyle(
-                        fontSize: 25,
+                        fontSize: 20,
                         fontWeight: FontWeight.w600,
                         letterSpacing: 1,
                         wordSpacing: 2
