@@ -11,12 +11,15 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    SizeConfig().init(context);
+
     return SafeArea(
       child: SizedBox(
         width: double.infinity,
         child: Padding(
           padding: EdgeInsets.symmetric(
-            horizontal: getProportionateScreenWidth(20)
+            horizontal: getProportionateScreenWidth(20),
           ),
           child: SingleChildScrollView(
             child: Column(
