@@ -13,6 +13,9 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    SizeConfig().init(context);
+
     return SizedBox(
       width: double.infinity,
       child: Padding(
@@ -51,14 +54,14 @@ class ForgotPassForm extends StatefulWidget {
 }
 
 class _ForgotPassFormState extends State<ForgotPassForm> {
-  final _formkey = GlobalKey<FormState>();
+  final _formKey = GlobalKey<FormState>();
   List<String> errors= [];
   String? email;
 
   @override
   Widget build(BuildContext context) {
     return Form(
-      key: _formkey,
+      key: _formKey,
       child: Column(
         children: [
           TextFormField(
@@ -103,7 +106,7 @@ class _ForgotPassFormState extends State<ForgotPassForm> {
           DefaultButton(
             text: "Continuar",
             press: () {
-              if(_formkey.currentState!.validate()){
+              if(_formKey.currentState!.validate()){
 
               }
             },
