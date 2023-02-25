@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:object_coder/components/social_card.dart';
 import 'package:object_coder/constants.dart';
+import 'package:object_coder/screens/sign_up/sign_up_screen.dart';
 import 'package:object_coder/size_config.dart';
 
 class Body extends StatelessWidget {
@@ -32,6 +34,31 @@ class Body extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(height: SizeConfig.screenHeight * 0.08),
+                SignUpScreen(),
+                SizedBox(height: SizeConfig.screenHeight * 0.08),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SocialCard(
+                      icon: "assets/icons/google-icon.svg",
+                      press: () {},
+                    ),
+                    SocialCard(
+                      icon: "assets/icons/facebook-2.svg",
+                      press: () {},
+                    ),
+                    SocialCard(
+                      icon: "assets/icons/twitter.svg",
+                      press: () {},
+                    ),
+                  ],
+                ),
+                SizedBox(height: getProportionateScreenHeight(20)),
+                Text(
+                  "Al continuar, confirma que está de acuerdo \ncon nuestros Términos y Condiciones",
+                  textAlign: TextAlign.center,
+                  style: Theme.of(context).textTheme.caption,
+                )
               ],
             ),
           ),
