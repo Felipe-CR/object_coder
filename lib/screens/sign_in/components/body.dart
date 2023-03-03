@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:object_coder/components/no_account_text.dart';
-import 'package:object_coder/components/social_card.dart';
-import 'package:object_coder/screens/sign_in/components/sign_form.dart';
-import 'package:object_coder/size_config.dart';
+import 'package:ObjectCoder/components/no_account_text.dart';
+import 'package:ObjectCoder/components/social_card.dart';
+import 'package:ObjectCoder/screens/sign_in/components/sign_form.dart';
+import 'package:ObjectCoder/size_config.dart';
 
 class Body extends StatelessWidget {
   const Body({

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:object_coder/size_config.dart';
+import 'package:ObjectCoder/size_config.dart';
 
 class SocialCard extends StatelessWidget {
   const SocialCard({

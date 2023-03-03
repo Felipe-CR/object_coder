@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:object_coder/screens/sign_up/components/body.dart';
+import 'package:ObjectCoder/screens/sign_up/components/body.dart';
 
 class SignUpScreen extends StatelessWidget {
   static String routeName = "/sign_up";

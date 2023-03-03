@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:object_coder/constants.dart';
+import 'package:ObjectCoder/constants.dart';
 
 class HomeScreen extends StatelessWidget {
   static String routeName = "/home";

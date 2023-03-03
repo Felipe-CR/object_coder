@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:object_coder/routs.dart';
-import 'package:object_coder/screens/splash/splash_screen.dart';
-import 'package:object_coder/theme.dart';
+import 'package:ObjectCoder/routs.dart';
+import 'package:ObjectCoder/screens/splash/splash_screen.dart';
+import 'package:ObjectCoder/theme.dart';
 
 void main() {
   runApp(const MyApp());

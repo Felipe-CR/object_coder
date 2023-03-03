@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:object_coder/constants.dart';
-import 'package:object_coder/screens/sign_in/sign_in_screen.dart';
+import 'package:ObjectCoder/constants.dart';
+import 'package:ObjectCoder/screens/sign_in/sign_in_screen.dart';
 
 class SplashScreen extends StatelessWidget {
   static String routeName = "/splash";

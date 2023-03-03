@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:object_coder/size_config.dart';
+import 'package:ObjectCoder/size_config.dart';
 
 const kPrimaryColor = Color(0xFF674AEF);
 const kColorRegister= Color(0xFF89dad0);

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:object_coder/components/custom_surffix_icon.dart';
-import 'package:object_coder/components/default_button.dart';
-import 'package:object_coder/constants.dart';
-import 'package:object_coder/screens/complete_profile/complete_profile_screen.dart';
-import 'package:object_coder/size_config.dart';
+import 'package:ObjectCoder/components/custom_surffix_icon.dart';
+import 'package:ObjectCoder/components/default_button.dart';
+import 'package:ObjectCoder/constants.dart';
+import 'package:ObjectCoder/screens/complete_profile/complete_profile_screen.dart';
+import 'package:ObjectCoder/size_config.dart';
 
 class SignUpForm extends StatefulWidget {
   const SignUpForm({

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:object_coder/components/custom_surffix_icon.dart';
-import 'package:object_coder/components/default_button.dart';
-import 'package:object_coder/components/form_error.dart';
-import 'package:object_coder/constants.dart';
-import 'package:object_coder/helper/keyboard.dart';
-import 'package:object_coder/screens/forgot_password/forgot_password_screen.dart';
-import 'package:object_coder/screens/home/home_screen.dart';
-import 'package:object_coder/size_config.dart';
+import 'package:ObjectCoder/components/custom_surffix_icon.dart';
+import 'package:ObjectCoder/components/default_button.dart';
+import 'package:ObjectCoder/components/form_error.dart';
+import 'package:ObjectCoder/constants.dart';
+import 'package:ObjectCoder/helper/keyboard.dart';
+import 'package:ObjectCoder/screens/forgot_password/forgot_password_screen.dart';
+import 'package:ObjectCoder/screens/home/home_screen.dart';
+import 'package:ObjectCoder/size_config.dart';
 
 class SignForm extends StatefulWidget {
   const SignForm({
