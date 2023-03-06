@@ -44,12 +44,18 @@ class CustomBottomNavBar extends StatelessWidget {
             IconButton(
               icon: Icon(
                 Icons.assignment,
+                color: MenuState.person == selectMenu
+                    ? kPrimaryColor
+                    : inActiveIconColor,
               ),
               onPressed: () {},
             ),
             IconButton(
               icon: Icon(
                 Icons.favorite,
+                color: MenuState.person == selectMenu
+                    ? kPrimaryColor
+                    : inActiveIconColor,
               ),
               onPressed: () {},
             ),

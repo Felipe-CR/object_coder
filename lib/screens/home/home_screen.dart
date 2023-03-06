@@ -235,15 +235,15 @@ class HomeScreen extends StatelessWidget {
                               padding: EdgeInsets.all(10),
                               child: Image.asset(
                                 "assets/images/${imgList[index]}.png",
-                                width: 100,
-                                height: 100,
+                                width: 90,
+                                height: 90,
                               ),
                             ),
                             SizedBox(height: 10),
                             Text(
                               imgList[index],
                               style:  const TextStyle(
-                                fontSize: 19,
+                                fontSize: 15,
                                 fontWeight: FontWeight.w400,
                                 color: Colors.black,
                               ),
@@ -252,7 +252,7 @@ class HomeScreen extends StatelessWidget {
                             Text(
                               "20 Lecciones",
                               style: TextStyle(
-                                fontSize: 15,
+                                fontSize: 10,
                                 fontWeight: FontWeight.w500,
                                 color: Colors.black.withOpacity(0.5),
                               ),
