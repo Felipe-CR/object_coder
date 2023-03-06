@@ -1,3 +1,5 @@
+import 'package:ObjectCoder/components/custom_bottom_nav_bar.dart';
+import 'package:ObjectCoder/enum.dart';
 import 'package:flutter/material.dart';
 import 'package:ObjectCoder/constants.dart';
 
@@ -62,6 +64,21 @@ class HomeScreen extends StatelessWidget {
         size: 30,
       ),
     ];
+
+    List imgList = [
+      "Clases",
+      "Herencia",
+      "Objetos",
+      "Paralelismo",
+      "Encapsulamiento",
+      "Threads"
+    ];
+
+    // List imgList = [
+    //   "React Native",
+    //   "Python",
+    //   "C#",
+    // ];
 
     return Scaffold(
       body: ListView(
@@ -192,11 +209,66 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ],
                 ),
+                const SizedBox(height: 10),
+                GridView.builder(
+                  itemCount: imgList.length,
+                  shrinkWrap: true,
+                  physics: NeverScrollableScrollPhysics(),
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    childAspectRatio: (MediaQuery.of(context).size.height - 50 -25) / (4 * 240),
+                    mainAxisSpacing: 10,
+                    crossAxisSpacing: 10,
+                  ),
+                  itemBuilder: (context, index) {
+                    return InkWell(
+                      onTap: () {},
+                      child: Container(
+                        padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Color(0xFFF5F3FF),
+                        ),
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.all(10),
+                              child: Image.asset(
+                                "assets/images/${imgList[index]}.png",
+                                width: 100,
+                                height: 100,
+                              ),
+                            ),
+                            SizedBox(height: 10),
+                            Text(
+                              imgList[index],
+                              style:  const TextStyle(
+                                fontSize: 19,
+                                fontWeight: FontWeight.w400,
+                                color: Colors.black,
+                              ),
+                            ),
+                            SizedBox(height: 10),
+                            Text(
+                              "20 Lecciones",
+                              style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.black.withOpacity(0.5),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),
         ],
       ),
+      bottomNavigationBar: CustomBottomNavBar(selectMenu: MenuState.home),
     );
   }
 }
