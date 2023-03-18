@@ -1,7 +1,7 @@
+import 'package:ObjectCoder/screens/sign_up/components/sign_up_form.dart';
 import 'package:flutter/material.dart';
 import 'package:ObjectCoder/components/social_card.dart';
 import 'package:ObjectCoder/constants.dart';
-import 'package:ObjectCoder/screens/sign_up/sign_up_screen.dart';
 import 'package:ObjectCoder/size_config.dart';
 
 class Body extends StatelessWidget {
@@ -11,8 +11,6 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-    SizeConfig().init(context);
 
     return SafeArea(
       child: SizedBox(
@@ -29,12 +27,13 @@ class Body extends StatelessWidget {
                   "Registrar Cuenta",
                   style: headingStyle,
                 ),
+                ///add SizedBox
                 const Text(
                   "Complete sus datos o continúe \ncon las redes sociales",
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(height: SizeConfig.screenHeight * 0.08),
-                SignUpScreen(),
+                SignUpForm(),
                 SizedBox(height: SizeConfig.screenHeight * 0.08),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
