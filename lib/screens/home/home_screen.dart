@@ -1,5 +1,6 @@
 import 'package:ObjectCoder/components/custom_bottom_nav_bar.dart';
 import 'package:ObjectCoder/enum.dart';
+import 'package:ObjectCoder/screens/paradigma/paradigma_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:ObjectCoder/constants.dart';
 
@@ -131,7 +132,7 @@ class HomeScreen extends StatelessWidget {
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(28),
                   ),
                   child: TextFormField(
                     decoration: InputDecoration(
@@ -222,7 +223,15 @@ class HomeScreen extends StatelessWidget {
                   ),
                   itemBuilder: (context, index) {
                     return InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) =>
+                                ParadigmaScreen(imgList[index]),
+                          ),
+                        );
+                      }, ///Implementar enrutamiento
                       child: Container(
                         padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
                         decoration: BoxDecoration(
