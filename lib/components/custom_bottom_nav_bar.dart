@@ -30,7 +30,7 @@ class CustomBottomNavBar extends StatelessWidget {
       child: SafeArea(
         top: false,
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             IconButton(
               icon: Icon(
@@ -66,7 +66,7 @@ class CustomBottomNavBar extends StatelessWidget {
                   ? kPrimaryColor
                   : inActiveIconColor,
               ),
-              onPressed: () {}, //=> Navigator.pushNamed(context, routeName),
+              onPressed: () {}, ///=> Navigator.pushNamed(context, routeName),
             )
           ],
         ),
