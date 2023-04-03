@@ -38,6 +38,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_svg: ^0.22.0 #Help us to SVG in our app
   provider: ^6.0.0 #For State management
+  url_launcher: ^6.0.0
 
 dev_dependencies:
   flutter_test:
