@@ -1,16 +1,18 @@
 import 'package:ObjectCoder/components/custom_bottom_nav_bar.dart';
+import 'package:ObjectCoder/components/progress.dart';
 import 'package:ObjectCoder/enum.dart';
 import 'package:ObjectCoder/screens/paradigma/paradigma_screen.dart';
+import 'package:ObjectCoder/screens/progress_topics/progress_topics_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:ObjectCoder/constants.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomeScreen extends StatelessWidget {
   static String routeName = "/home";
 
   const HomeScreen({
-    Key? key
+    Key? key,
   }) : super(key: key);
-
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +23,7 @@ class HomeScreen extends StatelessWidget {
       "Cursos Gratis",
       "Libros",
       "En vivo",
-      "Aprendizaje"
+      "Progreso"
     ];
 
     List<Color> catColors = [
@@ -33,36 +35,52 @@ class HomeScreen extends StatelessWidget {
       const Color(0xFF78E667),
     ];
 
-    List<Icon> catIcons = [
-      const Icon(
-        Icons.category,
+    List<IconButton> catIcons = [
+      IconButton(
+        icon: const Icon(Icons.category),
         color: Colors.white,
-        size: 30,
+        iconSize: 30,
+        onPressed: () {},
       ),
-      const Icon(
-        Icons.video_call,
+      IconButton(
+        icon: const Icon(Icons.video_call),
         color: Colors.white,
-        size: 30,
+        iconSize: 30,
+        onPressed: () {},
       ),
-      const Icon(
-        Icons.assignment,
+      IconButton(
+        icon: const Icon(Icons.assignment),
         color: Colors.white,
-        size: 30,
+        iconSize: 30,
+        onPressed: () {},
       ),
-      const Icon(
-        Icons.store,
+      IconButton(
+        icon: const Icon(Icons.store),
         color: Colors.white,
-        size: 30,
+        iconSize: 30,
+        onPressed: () {
+          launch('https://drive.google.com/drive/u/2/folders/1G0esbA704Lp3uHsgSHXbreqhyrk44oN7');
+        },
       ),
-      const Icon(
-        Icons.play_circle_fill,
+      IconButton(
+        icon: const Icon(Icons.play_circle_fill),
         color: Colors.white,
-        size: 30,
+        iconSize: 30,
+        onPressed: () {},
       ),
-      const Icon(
-        Icons.emoji_events,
+      IconButton(
+        icon: const Icon(Icons.emoji_events),
         color: Colors.white,
-        size: 30,
+        iconSize: 30,
+        onPressed: () {
+          // Navigator.push(
+          //   context,
+          //   MaterialPageRoute(
+          //     builder: (context) =>
+          //         ProgressTopicsScreen(progress: progress,),
+          //   ),
+          // );
+        },
       ),
     ];
 
@@ -74,12 +92,6 @@ class HomeScreen extends StatelessWidget {
       "Encapsulamiento",
       "Threads"
     ];
-
-    // List imgList = [
-    //   "React Native",
-    //   "Python",
-    //   "C#",
-    // ];
 
     return Scaffold(
       body: ListView(
@@ -194,7 +206,7 @@ class HomeScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: const [
                     Text(
-                      "Cursos",
+                      "Categorias",
                       style: TextStyle(
                         fontSize: 23,
                         fontWeight: FontWeight.w600,
@@ -231,7 +243,7 @@ class HomeScreen extends StatelessWidget {
                                 ParadigmaScreen(imgList[index]),
                           ),
                         );
-                      }, ///Implementar enrutamiento
+                      },
                       child: Container(
                         padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
                         decoration: BoxDecoration(
@@ -259,7 +271,7 @@ class HomeScreen extends StatelessWidget {
                             ),
                             SizedBox(height: 10),
                             Text(
-                              "20 Lecciones",
+                              "10 Lecciones",
                               style: TextStyle(
                                 fontSize: 10,
                                 fontWeight: FontWeight.w500,
