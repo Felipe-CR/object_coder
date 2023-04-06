@@ -73,13 +73,13 @@ class HomeScreen extends StatelessWidget {
         color: Colors.white,
         iconSize: 30,
         onPressed: () {
-          // Navigator.push(
-          //   context,
-          //   MaterialPageRoute(
-          //     builder: (context) =>
-          //         ProgressTopicsScreen(progress: progress,),
-          //   ),
-          // );
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) =>
+                  ProgressTopicsScreen(progress: progress),
+            ),
+          );
         },
       ),
     ];
