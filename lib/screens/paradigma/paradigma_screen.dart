@@ -143,7 +143,7 @@ class _CourseScreenState extends State<ParadigmaScreen> {
                       child: Container(
                         padding: EdgeInsets.symmetric(vertical: 15, horizontal: 35),
                         child: Text(
-                          "Pruebas",
+                          "Test",
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 20,
