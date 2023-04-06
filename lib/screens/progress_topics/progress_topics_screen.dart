@@ -93,48 +93,5 @@ class ProgressTopicsScreen extends StatelessWidget {
         ],
       ),
     );
-
-
-    // return GestureDetector( ///Scaffold cambio
-    //   onTap: () {},
-    //   child: Container(
-    //     decoration: BoxDecoration(
-    //       borderRadius: BorderRadius.circular(10),
-    //       color: Colors.white,
-    //     ),
-    //     padding: const EdgeInsets.all(10),
-    //     child: Row(
-    //       crossAxisAlignment: CrossAxisAlignment.start,
-    //       children: [
-    //         ClipRRect(
-    //           borderRadius: BorderRadius.circular(10),
-    //           child: Image.asset(
-    //             progress[0].images,
-    //             height: 60, ///Revisar dimensiones en el dispositivo
-    //           ),
-    //         ),
-    //         const SizedBox(
-    //           width: 10,
-    //         ),
-    //         Expanded(
-    //           child: Column(
-    //             crossAxisAlignment: CrossAxisAlignment.start,
-    //             children: [
-    //               Text(progress[0].name),
-    //               const SizedBox(
-    //                 height: 5,
-    //               ),
-    //               LinearProgressIndicator(
-    //                 value: progress[0].completedPercentage,
-    //                 backgroundColor: Colors.black12,
-    //                 color: kPrimaryColor,
-    //               )
-    //             ],
-    //           ),
-    //         ),
-    //       ],
-    //     ),
-    //   ),
-    // );
   }
 }
