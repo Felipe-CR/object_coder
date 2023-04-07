@@ -30,7 +30,7 @@ class ProgressTopicsScreen extends StatelessWidget {
       body: ListView(
         children: [
           Padding(
-            padding: const EdgeInsets.only(top: 20, right: 15, left: 15),
+            padding: const EdgeInsets.only(top: 10, right: 10, left: 10),
             child: Column(
               children: [
                 GridView.builder(
@@ -39,7 +39,7 @@ class ProgressTopicsScreen extends StatelessWidget {
                   physics: const NeverScrollableScrollPhysics(),
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 1,
-                    childAspectRatio: 1.1,
+                    childAspectRatio: 4, ///Revisar si 3 0 4 para las dimensiones
                   ),
                   itemBuilder: (context, index) {
                     return GestureDetector(
