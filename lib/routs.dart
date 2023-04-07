@@ -1,4 +1,5 @@
 import 'package:ObjectCoder/screens/add_section/add_section.dart';
+import 'package:ObjectCoder/screens/profile/profile_screen.dart';
 import 'package:flutter/widgets.dart';
 import 'package:ObjectCoder/screens/complete_profile/complete_profile_screen.dart';
 import 'package:ObjectCoder/screens/forgot_password/forgot_password_screen.dart';
@@ -15,4 +16,5 @@ final Map<String, WidgetBuilder> routes = {
   ForgotPasswordScreen.routeName: (context) => ForgotPasswordScreen(),
   HomeScreen.routeName: (context) => HomeScreen(),
   AddSelection.routeName: (context) => AddSelection(),
+  ProfileScreen.routeName: (context) => ProfileScreen(),
 };
