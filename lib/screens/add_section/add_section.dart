@@ -56,6 +56,7 @@ class _AddSelectionState extends State<AddSelection> {
                           isAddSection = true;
                         });
                       },
+                      ///Revisar tamaño
                       child: Container(
                         padding: EdgeInsets.symmetric(vertical: 15, horizontal: 35),
                         child: Text(
@@ -78,6 +79,7 @@ class _AddSelectionState extends State<AddSelection> {
                           isAddSection = false;
                         });
                       },
+                      ///Revisar tamaño
                       child: Container(
                         padding: EdgeInsets.symmetric(vertical: 15, horizontal: 35),
                         child: Text(
