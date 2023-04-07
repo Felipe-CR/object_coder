@@ -1,6 +1,7 @@
 import 'package:ObjectCoder/constants.dart';
 import 'package:ObjectCoder/enum.dart';
 import 'package:ObjectCoder/screens/home/home_screen.dart';
+import 'package:ObjectCoder/screens/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 
 class CustomBottomNavBar extends StatelessWidget {
@@ -44,7 +45,7 @@ class CustomBottomNavBar extends StatelessWidget {
             IconButton(
               icon: Icon(
                 Icons.assignment,
-                color: MenuState.person == selectMenu
+                color: MenuState.assignment == selectMenu
                     ? kPrimaryColor
                     : inActiveIconColor,
               ),
@@ -53,7 +54,7 @@ class CustomBottomNavBar extends StatelessWidget {
             IconButton(
               icon: Icon(
                 Icons.favorite,
-                color: MenuState.person == selectMenu
+                color: MenuState.favorite == selectMenu
                     ? kPrimaryColor
                     : inActiveIconColor,
               ),
@@ -66,7 +67,9 @@ class CustomBottomNavBar extends StatelessWidget {
                   ? kPrimaryColor
                   : inActiveIconColor,
               ),
-              onPressed: () {}, ///=> Navigator.pushNamed(context, routeName),
+              onPressed: () {
+                Navigator.pushNamed(context, ProfileScreen.routeName);
+              },
             )
           ],
         ),
