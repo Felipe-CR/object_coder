@@ -1,5 +1,5 @@
 import 'package:ObjectCoder/components/custom_bottom_nav_bar.dart';
-import 'package:ObjectCoder/components/progress.dart';
+import 'package:ObjectCoder/screens/progress_topics/Components/progress.dart';
 import 'package:ObjectCoder/enum.dart';
 import 'package:ObjectCoder/screens/paradigma/paradigma_screen.dart';
 import 'package:ObjectCoder/screens/progress_topics/progress_topics_screen.dart';

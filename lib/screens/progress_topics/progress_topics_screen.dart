@@ -1,4 +1,4 @@
-import 'package:ObjectCoder/components/progress.dart';
+import 'package:ObjectCoder/screens/progress_topics/Components/progress.dart';
 import 'package:ObjectCoder/constants.dart';
 import 'package:flutter/material.dart';
 
