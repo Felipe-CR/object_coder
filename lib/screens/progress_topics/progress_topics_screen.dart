@@ -39,7 +39,7 @@ class ProgressTopicsScreen extends StatelessWidget {
                   physics: const NeverScrollableScrollPhysics(),
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 1,
-                    childAspectRatio: 4, ///Revisar si 3 0 4 para las dimensiones
+                    childAspectRatio: 4,
                   ),
                   itemBuilder: (context, index) {
                     return GestureDetector(
