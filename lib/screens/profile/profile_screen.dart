@@ -12,8 +12,9 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return  Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: const Text("Perfil"),
       ),
       body: const Body(),
