@@ -63,7 +63,7 @@ class _AddSelectionState extends State<AddSelection> {
                           "Subir Videos", ///Revisar NOMBRE
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 16,
+                            fontSize: 14,
                             fontWeight: FontWeight.w500,
                           ),
                         ),
@@ -86,7 +86,7 @@ class _AddSelectionState extends State<AddSelection> {
                           "Subir Test",
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 16,
+                            fontSize: 14,
                             fontWeight: FontWeight.w500,
                           ),
                         ),
