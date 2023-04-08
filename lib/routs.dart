@@ -1,4 +1,6 @@
 import 'package:ObjectCoder/screens/add_section/add_section.dart';
+import 'package:ObjectCoder/screens/groups/components/groups.dart';
+import 'package:ObjectCoder/screens/groups/groups_screen.dart';
 import 'package:ObjectCoder/screens/profile/profile_screen.dart';
 import 'package:flutter/widgets.dart';
 import 'package:ObjectCoder/screens/complete_profile/complete_profile_screen.dart';
@@ -17,4 +19,5 @@ final Map<String, WidgetBuilder> routes = {
   HomeScreen.routeName: (context) => HomeScreen(),
   AddSelection.routeName: (context) => AddSelection(),
   ProfileScreen.routeName: (context) => ProfileScreen(),
+  GroupsScreen.routeName: (context) => GroupsScreen(group: group),
 };

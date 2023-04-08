@@ -1,5 +1,6 @@
 import 'package:ObjectCoder/constants.dart';
 import 'package:ObjectCoder/enum.dart';
+import 'package:ObjectCoder/screens/groups/groups_screen.dart';
 import 'package:ObjectCoder/screens/home/home_screen.dart';
 import 'package:ObjectCoder/screens/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
@@ -49,7 +50,7 @@ class CustomBottomNavBar extends StatelessWidget {
                     ? kPrimaryColor
                     : inActiveIconColor,
               ),
-              onPressed: () {},
+              onPressed: () => Navigator.pushNamed(context, GroupsScreen.routeName),
             ),
             IconButton(
               icon: Icon(
