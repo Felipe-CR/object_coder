@@ -58,7 +58,7 @@ class _AddSelectionState extends State<AddSelection> {
                       },
                       ///Revisar tamaño
                       child: Container(
-                        padding: EdgeInsets.symmetric(vertical: 15, horizontal: 35),
+                        padding: EdgeInsets.symmetric(vertical: 15, horizontal: 30),
                         child: Text(
                           "Subir Videos", ///Revisar NOMBRE
                           style: TextStyle(
@@ -81,7 +81,7 @@ class _AddSelectionState extends State<AddSelection> {
                       },
                       ///Revisar tamaño
                       child: Container(
-                        padding: EdgeInsets.symmetric(vertical: 15, horizontal: 35),
+                        padding: EdgeInsets.symmetric(vertical: 15, horizontal: 30),
                         child: Text(
                           "Subir Test",
                           style: TextStyle(
