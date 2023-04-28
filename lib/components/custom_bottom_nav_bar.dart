@@ -1,5 +1,6 @@
 import 'package:ObjectCoder/constants.dart';
 import 'package:ObjectCoder/enum.dart';
+import 'package:ObjectCoder/screens/certificates/certificates_screen.dart';
 import 'package:ObjectCoder/screens/groups/groups_screen.dart';
 import 'package:ObjectCoder/screens/home/home_screen.dart';
 import 'package:ObjectCoder/screens/profile/profile_screen.dart';
@@ -54,12 +55,12 @@ class CustomBottomNavBar extends StatelessWidget {
             ),
             IconButton(
               icon: Icon(
-                Icons.favorite,
-                color: MenuState.favorite == selectMenu
+                Icons.account_balance_wallet,
+                color: MenuState.accountbalancewallet == selectMenu
                     ? kPrimaryColor
                     : inActiveIconColor,
               ),
-              onPressed: () {},
+              onPressed: () => Navigator.pushNamed(context, CertificateScreen.routeName),
             ),
             IconButton(
               icon: Icon(

@@ -1,6 +1,6 @@
 enum MenuState {
   home,
   assignment,
-  favorite,
+  accountbalancewallet,
   person
 }
