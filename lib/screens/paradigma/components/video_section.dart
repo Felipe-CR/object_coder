@@ -9,6 +9,7 @@ class VideoSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
+    ///Completar videoList
     List videoList = [
       "Introducción a la teoría",
       "Buenas Prácticas",

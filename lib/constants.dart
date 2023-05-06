@@ -4,6 +4,7 @@ import 'package:ObjectCoder/size_config.dart';
 const kPrimaryColor = Color(0xFF674AEF);
 const kColorRegister= Color(0xFF89dad0);
 const kTextColor = Color(0xff232121);
+const qTextColor = Color(0xfff2f2f2);
 
 final headingStyle = TextStyle(
   fontSize: getProportionateScreenWidth(28),
