@@ -13,17 +13,17 @@ class Progress {
 List<Progress> progress =[
   Progress(
       name: "Clases",
-      completedPercentage: .80,
+      completedPercentage: 100,
       images: "assets/images/Clases.png"
   ),
   Progress(
     name: "Herencia",
-    completedPercentage: .0,
+    completedPercentage: .40,
     images: "assets/images/Herencia.png"
   ),
   Progress(
     name: "Objetos",
-    completedPercentage: .0,
+    completedPercentage: .20,
     images: "assets/images/Objetos.png"
   ),
   Progress(

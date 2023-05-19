@@ -17,8 +17,8 @@ List<Certificates> certificates = [
   Certificates(
     name: "Clases",
     duration: "10 lecciones",
-    isPlaying: false,
-    isCompleted: false,
+    isPlaying: true,
+    isCompleted: true,
   ),
   Certificates(
     name: "Herencia",

@@ -3,6 +3,7 @@ import 'package:ObjectCoder/enum.dart';
 import 'package:ObjectCoder/screens/certificates/components/certificates.dart';
 import 'package:ObjectCoder/components/icons.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class CertificateScreen extends StatelessWidget {
   static String routeName = "/certificate";
@@ -48,7 +49,8 @@ class CertificateScreen extends StatelessWidget {
                   itemBuilder: (context, index) {
                     return GestureDetector(
                       onTap: () {
-                        Navigator.pop(context);
+                        launch('https://drive.google.com/file/d/19GzlNpEXHFxGYUilW0eRO88Nq7apTEnf/view');
+                        ///Navigator.pop(context);
                       },
                       child: Container(
                         decoration: BoxDecoration(

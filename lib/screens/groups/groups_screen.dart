@@ -1,4 +1,5 @@
 import 'package:ObjectCoder/components/custom_bottom_nav_bar.dart';
+import 'package:ObjectCoder/constants.dart';
 import 'package:ObjectCoder/enum.dart';
 import 'package:ObjectCoder/screens/groups/components/groups.dart';
 import 'package:flutter/material.dart';
@@ -29,6 +30,17 @@ class GroupsScreen extends StatelessWidget {
             letterSpacing: 1,
           ),
         ),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 10),
+            child: IconButton(
+              icon:  const Icon(Icons.add),
+              iconSize: 28,
+              color: kPrimaryColor,
+              onPressed: () {},
+            ),
+          ),
+        ],
       ),
       body: ListView(
         children: [
@@ -47,7 +59,16 @@ class GroupsScreen extends StatelessWidget {
                   itemBuilder: (context, index){
                     return GestureDetector(
                       onTap: () {
-                        Navigator.pop(context);
+                        // Navigator.push(
+                        //   context,
+                        //   MaterialPageRoute(builder: (context) => group[index].press)
+                        // );
+
+                        // Navigator.push(
+                        //     context,
+                        //     group[index].press
+                        // );
+                        ///Revisar con el maestro el Jueves
                       },
                       child: Container(
                         decoration: BoxDecoration(
